@@ -1,0 +1,69 @@
+# Xcode
+#
+build/
+*.pbproj.user
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xcuserstate
+*.xcworkspace
+!default.xcworkspace
+xcuserdata/
+DerivedData/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+.idea
+
+# Swift Package Manager
+#
+.build/
+.Pbuild/
+*.xcodeproj
+Packages/
+Package.resolved
+*.swiftpm
+
+# CocoaPods
+#
+Pods/
+Podfile.lock
+
+# Carthage
+#
+Carthage/
+Carthage.resolved
+Carthage.Build/
+
+# Fastlane
+#
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
+
+# Localization
+#
+*.lproj/*.lproj
+
+# macOS
+#
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Various settings
+#
+*.swp
+*~.nib
+
+# User-specific files
+#
+*.suo
+*.userossstate
+*.sln.docstates
+
+# Logs
+#
+*.log
