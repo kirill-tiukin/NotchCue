@@ -26,7 +26,25 @@ the lens instead of off to the side of the screen.
 - **Menu-bar controlled** — no Dock icon; toggle visibility from the menu bar
   or a global hotkey
 
-## Building
+## Install
+
+1. Download the latest `NotchCue.zip` from the
+   [Releases page](https://github.com/kirill-tiukin/NotchCue/releases/latest).
+2. Unzip it and drag `NotchCue.app` into `/Applications`.
+3. First launch: this build isn't notarized by Apple (no paid developer
+   account), so Gatekeeper will block it — do this **once**:
+   - Right-click `NotchCue.app` → **Open** → click **Open** again in the
+     dialog that appears (a plain double-click will just refuse to launch it).
+   - If macOS still says it's damaged/can't be opened, run this in Terminal,
+     then try again: `xattr -cr /Applications/NotchCue.app`
+4. macOS will ask for microphone access — only needed if you turn on Voice
+   activation; you can deny it and everything else still works.
+
+Requires macOS 14 or later. No Dock icon on purpose — look for it in the
+menu bar, or use the global shortcut (⌃⌥⌘P by default, and fully
+re-bindable in Settings) to show/hide it.
+
+## Building from source
 
 ```bash
 brew install xcodegen
